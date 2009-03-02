@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #80440E;
+    background-image: url('../images/background.png');
+    background-repeat: repeat-x;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*
+  Colors:
+  #FFFFFF - White
+  #F7D758 - Light Yellow/Tan
+  #80440E - Dark Brown
+*/
+
+h1 h2 h3 h4 h5 h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+a, a:hover, a:visited {
+    color: #F7D758;
+}
+
+img {
+    border-width: 0px;
+}
+
+ol li, ul li, dl dt {
+    margin-left: 30px;
+}
+
+
+#page_wrapper {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: left;
+    width: 760px;
+}
+
+#header {
+    height: 220px;
+    text-align: center;
+}
+
+#header h1 {
+    background-image: url('../images/haystack_logo.png');
+    background-position: -20px -30px;
+    height: 120px;
+    margin-left: 160px;
+    margin-top: 50px;
+    text-indent: -9999px;
+    width: 430px;
+}
+
+#header #tagline {
+    font-size: 12px;
+    font-style: italic;
+}
+
+#navigation {
+    height: 60px;
+}
+
+#navigation ul {
+    list-style: none;
+    margin-left: 170px;
+}
+
+#navigation ul li {
+    float: left;
+    font-weight: bold;
+}
+
+#navigation ul li a {
+    color: #80440E;
+}
+
+#content {
+    
+}
+
+#content h2 {
+    color: #FFFFFF;
+    font-family: Georgia, Times, serif;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+#content #get_started {
+    float: left;
+    padding: 10px;
+    width: 360px;
+}
+
+#content #get_started #screencast {
+    margin-top: 10px;
+}
+
+#content #news {
+    float: left;
+    padding: 10px;
+    width: 360px;
+}
+
+.entry h3 {
+    color: #FFFFFF;
+    font-family: Georgia, Times, serif;
+    font-weight: normal;
+}
+
+.entry .entry_metadata {
+    font-size: 12px;
+}
+
+#footer {
+    clear: both;
+    font-size: 12px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+#footer #copyright {
+    border-top: solid 1px #F7D758;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 10px;
+}
