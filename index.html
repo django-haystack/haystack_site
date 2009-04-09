@@ -6,100 +6,76 @@
     </head>
     
     <body>
-        <div id="page_wrapper">
             <div id="header">
                 <h1>Haystack</h1>
-
-                <p id="tagline">
-                    Find the needle you're looking for.
-                </p>
+                <p>Modular search for Django</p>
+                
+                <ul class="features">
+                  <li>Term Boost</li>
+                  <li>More Like This</li>
+                  <li>Faceting</li>
+                  <li>Stored (non-indexed) fields</li>
+                  <li>Highlighting</li>
+                </ul>
             </div>
 
-            <div id="navigation">
+        <div id="page">
+            <div id="nav_bar">
+              <h2>Find the needle you're looking for.</h2>
                 <ul>
-                    <li><a href="http://www.djangoproject.com/">Django</a></li>
-                    <li><a href="http://github.com/toastdriven/django-haystack/tree/master">Download</a></li>
-                    <li><a href="/docs/">Documentation</a></li>
+                    <li class="download"><a href="http://github.com/toastdriven/django-haystack/tree/master">Download</a></li>
+                    <li class="docs"><a href="/docs/">Documentation</a></li>
                 </ul>
             </div>
 
             <div id="content">
-                <div id="get_started">
-                    <div id="setup">
-                        <h2>Setup</h2>
+              <div class="intro">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as the <a href="#">documentation</a> 
+                opposed to <a href="">quickstart guide</a> using 'Content here, 
+                <a href="#">download</a>, making it look like readable English.
+              </div>
 
-                        <ol>
-                            <li><a href="http://github.com/toastdriven/django-haystack/">Get the most recent source.</a></li>
-                            <li>Add <code>haystack</code> to your <code>INSTALLED_APPS</code>.</li>
-                            <li>Create <code>search_indexes.py</code> files for your models.</li>
-                            <li>Setup the main <code>SearchIndex</code> via <code>autodiscover</code> in your URLconf.</li>
-                            <li>Include <code>haystack.urls</code> to your URLconf.</li>
-                            <li>Search!</li>
-                        </ol>
-                    </div>
-                    
-                    <div>
-                        <h2>Community</h2>
-                        
-                        <ul>
-                            <li><a href="http://groups.google.com/group/django-haystack/">Mailing List</a></li>
-                        </ul>
-                    </div>
+              <div id="screencast">
+                  <div style="width:640px;height:360px;background:#939981;color:#565a4c;">screencastgoeshere</div>
+                  <p>About the screencast.</p>
+              </div>
 
-                    <div id="screencast">
-                        <h2>Screencast</h2>
+              <div id="get_started">
+                      <h2>Get started</h2>
 
-                        <p>Coming Soon!</p>
-                    </div>
+                      <ol>
+                          <li><a href="http://github.com/toastdriven/django-haystack/">Get the most recent source.</a></li>
+                          <li>Add <code>haystack</code> to your <code>INSTALLED_APPS</code>.</li>
+                          <li>Create <code>indexes.py</code> files for your models.</li>
+                          <li>Setup the main <code>SearchIndex</code> via <code>autodiscover</code> in your URLconf.</li>
+                          <li>Include <code>haystack.urls</code> to your URLconf.</li>
+                          <li>Search!</li>
+                      </ol>
+                      <p>More information in the <a href="/docs/">full documentation</a>.</p>
                 </div>
-
-                <div id="news">
-                    <h2>Recent News</h2>
-                    
-                    <div class="entry">
-                        <h3>Whoosh Support</h3>
-
-                        <p class="entry_metadata">Posted on 2009/04/02 by Daniel</p>
-
-                        <p>
-                            Haystack now features a new backend: 
-                            <a href="http://whoosh.ca/">Whoosh</a>! This is
-                            excellent news, as it's both a great way to get up
-                            and running with Haystack (as Whoosh is pure Python,
-                            easy to install and no extra servers are needed) as
-                            well as a proof-of-concept that Haystack can work
-                            (and work well) with other backends.
-                        </p>
-                        
-                        <p>
-                            You'll need to patch Whoosh (patch included) in
-                            order for everything to work correctly. We're
-                            contributing the patch back to Whoosh proper and
-                            hope it (or something like it) will be merged in
-                            shortly.
-                        </p>
-                    </div>
-
-                    <div class="entry">
-                        <h3>Site Launch</h3>
-
-                        <p class="entry_metadata">Posted on 2009/03/02 by Daniel</p>
-
-                        <p>
-                            The new Haystack site has been launched. It will serve
-                            as the primary place to check the documentation as well
-                            as screencasts. More to come soon, especially in the
-                            form of additional documentation.
-                        </p>
-                    </div>
+            </div>
+            
+            <div id="sidebar">
+                <div class="entry">
+                    <h3>Site Launch</h3>
+                    <p class="meta">Posted on 2009/03/02 by Daniel</p>
+                    <p>
+                        The new Haystack site has been launched. It will serve
+                        as the primary place to check the documentation as well
+                        as screencasts. More to come soon, especially in the
+                        form of additional documentation.
+                    </p>
                 </div>
             </div>
 
             <div id="footer">
-                <div id="copyright">
+                <p>
                     Copyright &copy; 2009 - <a href="http://toastdriven.com/">Daniel Lindsley</a><br>
-                    Logo by <a href="http://mintchaos.com/">Christian Metts</a>
-                </div>
+                    Pixels by <a href="http://mintchaos.com/">Christian Metts</a>
+                </p>
             </div>
         </div>
         
