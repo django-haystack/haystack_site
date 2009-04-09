@@ -30,18 +30,20 @@
 
             <div id="content">
               <div class="intro">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as the <a href="#">documentation</a> 
-                opposed to <a href="">quickstart guide</a> using 'Content here, 
-                <a href="#">download</a>, making it look like readable English.
+                Search doesn't have to be hard. Haystack lets you write your 
+                search code once and choose the search engine you want it to 
+                run on. With a familiar API that should make any Djangonaut
+                feel right at home and an architecture that allows you to
+                swap things in and out as you need to, it's how search ought to
+                be.
               </div>
 
+              <!--
               <div id="screencast">
                   <div style="width:640px;height:360px;background:#939981;color:#565a4c;">screencastgoeshere</div>
                   <p>About the screencast.</p>
               </div>
+              -->
 
               <div id="get_started">
                       <h2>Get started</h2>
@@ -49,16 +51,42 @@
                       <ol>
                           <li><a href="http://github.com/toastdriven/django-haystack/">Get the most recent source.</a></li>
                           <li>Add <code>haystack</code> to your <code>INSTALLED_APPS</code>.</li>
-                          <li>Create <code>indexes.py</code> files for your models.</li>
+                          <li>Create <code>search_indexes.py</code> files for your models.</li>
                           <li>Setup the main <code>SearchIndex</code> via <code>autodiscover</code> in your URLconf.</li>
                           <li>Include <code>haystack.urls</code> to your URLconf.</li>
                           <li>Search!</li>
                       </ol>
                       <p>More information in the <a href="/docs/">full documentation</a>.</p>
                 </div>
+                
+                <div id="community">
+                          <h2>Community</h2>
+
+                          <p>There is a <a href="http://groups.google.com/group/django-haystack/">mailing list</a> available for general discussion.</p>
+                          
+                          <p>For those craving real, human interaction, there is also an IRC channel (<code>#haystack</code> on <code>irc.freenode.net</code>).</p>
+                    </div>
             </div>
             
             <div id="sidebar">
+                <div class="entry">
+                    <h3>Whoosh Support</h3>
+                    <p class="meta">Posted on 2009/04/02 by Daniel</p>
+                    <p>
+                        Haystack now features a new backend: <a href="http://whoosh.ca/">Whoosh</a>! This is 
+                        excellent news, as it's both a great way to get up and 
+                        running with Haystack (as Whoosh is pure Python, easy to 
+                        install and no extra servers are needed) as well as a 
+                        proof-of-concept that Haystack can work (and work well) 
+                        with other backends.
+                    </p>
+                    <p>
+                        You'll need to patch Whoosh (patch included) in order 
+                        for everything to work correctly. We're contributing the 
+                        patch back to Whoosh proper and hope it (or something 
+                        like it) will be merged in shortly.
+                    </p>
+                </div>
                 <div class="entry">
                     <h3>Site Launch</h3>
                     <p class="meta">Posted on 2009/03/02 by Daniel</p>
