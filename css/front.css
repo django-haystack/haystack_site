@@ -11,7 +11,7 @@ del { text-decoration: line-through; }
 table { width: 100%; border-collapse: collapse; border-spacing: 0; }
 table th { font-weight: bold; color: text-align:left; }
 th, td { padding: 0 10px 0 0; }
-textarea, input { padding: 5px; border: 1px solid #ccc; background: #fff url(../../ellington_defaults/images/field_shadow.gif) repeat-x; font: normal 13px/16px 'Lucida Grande', Arial, sans-serif; text-shadow: 0 0 0 #000; }
+textarea, input { padding: 5px; border: 1px solid #ccc; background: #fff repeat-x; font: normal 13px/16px 'Lucida Grande', Arial, sans-serif; text-shadow: 0 0 0 #000; }
 input[type=file] { padding: 0; background: none; border: none; }
 form table td ul { list-style: none; padding: 0; }
 form table td { padding: 0 10px 5px 0; }

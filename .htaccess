@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^docs/(.*) http://docs.haystacksearch.org/dev/$1 [R=301,L]
