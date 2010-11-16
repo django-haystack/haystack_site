@@ -1,158 +1,202 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Haystack - Search for Django</title>
-        <link rel="stylesheet" href="css/front.css" media="screen">
-    </head>
+  <head>
+    <title>Haystack - Search for Django</title>
+    <link rel="stylesheet" href="css/front.css" media="screen" type="text/css">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Haystack</h1>
+      
+      <p>
+        Modular search for Django
+      </p>
+      
+      <ul class="features">
+        <li>More Like This</li>
+        <li>Faceting</li>
+        <li>Stored (non-indexed) fields</li>
+        <li>Highlighting</li>
+        <li>Spelling Suggestions</li>
+        <li>Boost</li>
+      </ul>
+    </div>
     
-    <body>
-            <div id="header">
-                <h1>Haystack</h1>
-                <p>Modular search for Django</p>
-                
-                <ul class="features">
-                  <li>More Like This</li>
-                  <li>Faceting</li>
-                  <li>Stored (non-indexed) fields</li>
-                  <li>Highlighting</li>
-                  <li>Spelling Suggestions</li>
-                  <li>Boost</li>
-                </ul>
-            </div>
-
-        <div id="page">
-            <div id="nav_bar">
-              <h2>Find the needle you're looking for.</h2>
-                <ul>
-                    <li class="download"><a href="http://github.com/toastdriven/django-haystack/tree/master">Download</a></li>
-                    <li class="docs"><a href="/docs/">Documentation</a></li>
-                </ul>
-            </div>
-
-            <div id="content">
-              <div class="intro">
-                Search doesn't have to be hard. Haystack lets you write your 
-                search code once and choose the search engine you want it to 
-                run on. With a familiar API that should make any Djangonaut
-                feel right at home and an architecture that allows you to
-                swap things in and out as you need to, it's how search ought 
-                to&nbsp;be.
-              </div>
-
-              <div class="intro">
-              	Haystack is <a href="http://github.com/toastdriven/django-haystack/blob/master/LICENSE">BSD licensed</a>,
-		plays nicely with third-party app without needing to modify the source and
-		supports <a href="http://lucene.apache.org/solr">Solr</a>, <a href="http://whoosh.ca/">Whoosh</a>
-		and <a href="http://xapian.org/">Xapian</a>.
-	      </div>
-
-              <!--
-              <div id="screencast">
-                  <div style="width:640px;height:360px;background:#939981;color:#565a4c;">screencastgoeshere</div>
-                  <p>About the screencast.</p>
-              </div>
-              -->
-
-              <div id="get_started">
-                      <h2>Get started</h2>
-
-                      <ol>
-                          <li><a href="http://github.com/toastdriven/django-haystack/">Get the most recent source.</a></li>
-                          <li>Add <code>haystack</code> to your <code>INSTALLED_APPS</code>.</li>
-                          <li>Create <code>search_indexes.py</code> files for your models.</li>
-                          <li>Setup the main <code>SearchIndex</code> via <code>autodiscover</code>.</li>
-                          <li>Include <code>haystack.urls</code> to your URLconf.</li>
-                          <li>Search!</li>
-                      </ol>
-                      <p>More information in the <a href="/docs/">full documentation</a>.</p>
-                </div>
-                
-                <div id="community">
-                          <h2>Community</h2>
-
-                          <p>There is a <a href="http://groups.google.com/group/django-haystack/">mailing list</a> available for general discussion.</p>
-                          
-                          <p>For those craving real, human interaction, there is also an IRC channel (<code>#haystack</code> on <code>irc.freenode.net</code>).</p>
-                          
-                          <p>Finally, if you find a bug or would like to request a feature, please submit an <a href="http://github.com/toastdriven/django-haystack/issues">issue</a>.</p>
-                    </div>
-            </div>
-            
-            <div id="sidebar">
-                <div class="entry">
-                    <h3>Haystack 1.0-final!</h3>
-                    <p class="meta">Posted on 2009/11/30 by Daniel</p>
-                    <p>
-		    	Haystack 1.0 has finally been released! It is available on
-			<a href="http://pypi.python.org/pypi/django-haystack">PyPi</a>
-			and <a href="http://github.com/toastdriven/django-haystack/downloads">GitHub</a>
-			for downloading. You can also now install it via <code>pip install django-haystack</code>.
-			You can read the announcement <a href="http://toastdriven.com/fresh/haystack-10-final-released/">here</a>.
-                    </p>
-		</div>
-		<div class="entry">
-                    <h3>Sprinting to 1.0-final</h3>
-                    <p class="meta">Posted on 2009/11/17 by Daniel</p>
-                    <p>
-		        Haystack has made a lot of progress over the this year and there
-			are very few blockers left before 1.0-final status. I am doing a
-			series of mini sprints over the course of the next week in an
-			effort to clear out all blockers.
-                    </p>
-		    <p>
-		        If things go as planned, there should be no 1.0-final tickets
-			remaining in the queue by the weekend. I'll then put together
-			an 1.0-rc1 release for testing. If no show-stoppers arise, a
-			week later, I will release 1.0-final. It's been a long time
-			in coming and I'm anxious to put the finishing touches on.
-		    </p>
-		</div>
-		<div class="entry">
-                    <h3>Whoosh Support</h3>
-                    <p class="meta">Posted on 2009/04/02 by Daniel</p>
-                    <p>
-                        Haystack now features a new backend: <a href="http://whoosh.ca/">Whoosh</a>! This is 
-                        excellent news, as it's both a great way to get up and 
-                        running with Haystack (as Whoosh is pure Python, easy to 
-                        install and no extra servers are needed) as well as a 
-                        proof-of-concept that Haystack can work (and work well) 
-                        with other backends.
-                    </p>
-                    <p>
-                        You'll need to patch Whoosh (patch included) in order 
-                        for everything to work correctly. We're contributing the 
-                        patch back to Whoosh proper and hope it (or something 
-                        like it) will be merged in shortly.
-                    </p>
-                </div>
-                <div class="entry">
-                    <h3>Site Launch</h3>
-                    <p class="meta">Posted on 2009/03/02 by Daniel</p>
-                    <p>
-                        The new Haystack site has been launched. It will serve
-                        as the primary place to check the documentation as well
-                        as screencasts. More to come soon, especially in the
-                        form of additional documentation.
-                    </p>
-                </div>
-            </div>
-
-            <div id="footer">
-                <p>
-                    Copyright &copy; 2009 - <a href="http://toastdriven.com/">Daniel Lindsley</a><br>
-                    Pixels by <a href="http://mintchaos.com/">Christian Metts</a>
-                </p>
-            </div>
+    <div id="page">
+      <div id="nav_bar">
+        <h2>Find the needle you're looking for.</h2>
+        
+        <ul>
+          <li class="download">
+            <a href="http://github.com/toastdriven/django-haystack/tree/master">Download</a>
+          </li>
+          <li class="docs">
+            <a href="/docs/">Documentation</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div id="content">
+        <div class="intro">
+          Search doesn't have to be hard. Haystack lets you write your search
+          code once and choose the search engine you want it to run on. With a
+          familiar API that should make any Djangonaut feel right at home and
+          an architecture that allows you to swap things in and out as you need
+          to, it's how search ought to&nbsp;be.
         </div>
         
-        <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        <div class="intro">
+          Haystack is
+          <a href="http://github.com/toastdriven/django-haystack/blob/master/LICENSE">BSD licensed</a>,
+          plays nicely with third-party app without needing to modify the
+          source and supports <a href="http://lucene.apache.org/solr">Solr</a>,
+          <a href="http://whoosh.ca/">Whoosh</a> and
+          <a href="http://xapian.org/">Xapian</a>.
+        </div>
+        <!--
+          <div id="screencast">
+            <div style="width:640px;height:360px;background:#939981;color:#565a4c;">screencastgoeshere</div>
+            <p>About the screencast.</p>
+          </div>
+        -->
+        <div id="get_started">
+          <h2>Get started</h2>
+          
+          <ol>
+            <li>
+              <a href="http://github.com/toastdriven/django-haystack/">Get the most recent source.</a>
+            </li>
+            <li>Add <code>haystack</code> to your <code>INSTALLED_APPS</code>.</li>
+            <li>Create <code>search_indexes.py</code> files for your models.</li>
+            <li>Setup the main <code>SearchIndex</code> via <code>autodiscover</code>.</li>
+            <li>Include <code>haystack.urls</code> to your URLconf.</li>
+            <li>Search!</li>
+          </ol>
+          
+          <p>
+            More information in the <a href="/docs/">full documentation</a>.
+          </p>
+        </div>
+        
+        <div id="community">
+          <h2>Community</h2>
+          
+          <p>
+            There is a
+            <a href="http://groups.google.com/group/django-haystack/">mailing list</a>
+            available for general discussion.
+          </p>
+          <p>
+            For those craving real, human interaction, there is also an IRC
+            channel (<code>#haystack</code> on <code>irc.freenode.net</code>).
+          </p>
+          <p>
+            Finally, if you find a bug or would like to request a feature,
+            please submit an
+            <a href="http://github.com/toastdriven/django-haystack/issues">issue</a>.
+          </p>
+        </div>
+      </div>
+      
+      <div id="sidebar">
+        <div class="entry">
+          <h3>Sprinting to 1.1-final</h3>
+          
+          <p class="meta">
+            Posted on 2010/11/16 by Daniel
+          </p>
+          
+          <p>
+            Though this site has sat out of date, there has been a lot of work
+            put into Haystack 1.1. As of writing, there are eight issues blocking
+            the release. I aim to have those down to zero by the end of the
+            week.
+          </p>
+          
+          <p>
+            Once those eight are done, I will be releasing 1.1-final. The RC
+            process really didn't do much last time and this release has been
+            a long time in coming. This release will feature:
+          </p>
+          
+          <ul>
+            <li>Vastly improved faceting</li>
+            <li>Whoosh 1.X support!</li>
+            <li>Document &amp; field boost support</li>
+            <li>Some admin integration</li>
+            <li>As well as several more features and a large number of bug fixes</li>
+          </ul>
+          
+          <p>
+            Looking forward, the goal for future releases is to have much
+            shorter cycle (one release every couple months) and have fewer
+            major features land between them. 1.1 tried to be too much and the
+            timeline suffered as a result.
+          </p>
+        </div>
+        
+        <div class="entry">
+          <h3>Haystack 1.0-final!</h3>
+          
+          <p class="meta">
+            Posted on 2009/11/30 by Daniel
+          </p>
+          
+          <p>
+            Haystack 1.0 has finally been released! It is available on
+            <a href="http://pypi.python.org/pypi/django-haystack">PyPi</a> and
+            <a href="http://github.com/toastdriven/django-haystack/downloads">GitHub</a>
+            for downloading. You can also now install it via
+            <code>pip install django-haystack</code>. You can read the
+            announcement 
+            <a href="http://toastdriven.com/fresh/haystack-10-final-released/">here</a>.
+          </p>
+        </div>
+        
+        <div class="entry">
+          <h3>Sprinting to 1.0-final</h3>
+          
+          <p class="meta">
+            Posted on 2009/11/17 by Daniel
+          </p>
+          
+          <p>
+            Haystack has made a lot of progress over the this year and there
+            are very few blockers left before 1.0-final status. I am doing a
+            series of mini sprints over the course of the next week in an effort
+            to clear out all blockers.
+          </p>
+          
+          <p>
+            If things go as planned, there should be no 1.0-final tickets
+            remaining in the queue by the weekend. I'll then put together an
+            1.0-rc1 release for testing. If no show-stoppers arise, a week
+            later, I will release 1.0-final. It's been a long time in coming
+            and I'm anxious to put the finishing touches on.
+          </p>
+        </div>
+        
+        <div>
+          <a href="/archive.html">News Archive</a>
+        </div>
+      </div>
+      
+      <div id="footer">
+        <p>
+          Copyright © 2009-2010 - <a href="http://toastdriven.com/">Daniel Lindsley</a><br>
+          Pixels by <a href="http://mintchaos.com/">Christian Metts</a>
+        </p>
+      </div>
+    </div>
+    
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <script type="text/javascript">
-        try {
+    </script><script type="text/javascript">
+    try {
         var pageTracker = _gat._getTracker("UA-1262021-10");
         pageTracker._trackPageview();
-        } catch(err) {}</script>
-    </body>
+        } catch(err) {}
+    </script>
+  </body>
 </html>
