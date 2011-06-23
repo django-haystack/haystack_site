@@ -100,6 +100,39 @@
       
       <div id="sidebar">
         <div class="entry">
+          <h3>Haystack 1.2.4 &amp; 2.0.0-alpha</h3>
+          
+          <p class="meta">
+            Posted on 2011/06/23 by Daniel
+          </p>
+          
+          <p>
+            Haystack has seen many releases since I last updated the site.
+            The 1.1.X series had several releases, Haystack 1.2 was released,
+            the 1.2.X series has had several releases &amp; I've started work on
+            2.0.0-alpha.
+          </p>
+          
+          <p>
+            The Haystack 1.2.X release was mostly bugfixes but newly included
+            n-gram support &amp; Whoosh 1.8.X support. You can find more details
+            on the
+            <a href="http://groups.google.com/group/django-haystack/browse_thread/thread/f98dc953fd440b28">mailing list</a>.
+          </p>
+          
+          <p>
+            Meanwhile, work on 2.0.0-alpha has hit master, including the
+            long-awaited addition of multiple index support. Similar to Django's
+            multidb support, this will allow you to talk to multiple search
+            engines at the same time. Things like master-slave setups, a
+            separate engine for autocomplete or split public-facing/admin-only
+            search are now trivial. When 2.0 lands, it'll be
+            backward-incompatible, as I'm also cleaning up other aspects of the
+            API.
+          </p>
+        </div>
+        
+        <div class="entry">
           <h3>Sprinting to 1.1-final</h3>
           
           <p class="meta">
@@ -132,47 +165,6 @@
             shorter cycle (one release every couple months) and have fewer
             major features land between them. 1.1 tried to be too much and the
             timeline suffered as a result.
-          </p>
-        </div>
-        
-        <div class="entry">
-          <h3>Haystack 1.0-final!</h3>
-          
-          <p class="meta">
-            Posted on 2009/11/30 by Daniel
-          </p>
-          
-          <p>
-            Haystack 1.0 has finally been released! It is available on
-            <a href="http://pypi.python.org/pypi/django-haystack">PyPi</a> and
-            <a href="http://github.com/toastdriven/django-haystack/downloads">GitHub</a>
-            for downloading. You can also now install it via
-            <code>pip install django-haystack</code>. You can read the
-            announcement 
-            <a href="http://toastdriven.com/fresh/haystack-10-final-released/">here</a>.
-          </p>
-        </div>
-        
-        <div class="entry">
-          <h3>Sprinting to 1.0-final</h3>
-          
-          <p class="meta">
-            Posted on 2009/11/17 by Daniel
-          </p>
-          
-          <p>
-            Haystack has made a lot of progress over the this year and there
-            are very few blockers left before 1.0-final status. I am doing a
-            series of mini sprints over the course of the next week in an effort
-            to clear out all blockers.
-          </p>
-          
-          <p>
-            If things go as planned, there should be no 1.0-final tickets
-            remaining in the queue by the weekend. I'll then put together an
-            1.0-rc1 release for testing. If no show-stoppers arise, a week
-            later, I will release 1.0-final. It's been a long time in coming
-            and I'm anxious to put the finishing touches on.
           </p>
         </div>
         
