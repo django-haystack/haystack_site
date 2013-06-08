@@ -7,11 +7,11 @@
   <body>
     <div id="header">
       <h1>Haystack</h1>
-      
+
       <p>
         Modular search for Django
       </p>
-      
+
       <ul class="features">
         <li>More Like This</li>
         <li>Faceting</li>
@@ -21,11 +21,11 @@
         <li>Boost</li>
       </ul>
     </div>
-    
+
     <div id="page">
       <div id="nav_bar">
         <h2>Find the needle you're looking for.</h2>
-        
+
         <ul>
           <li class="download">
             <a href="http://github.com/toastdriven/django-haystack/tree/master">Download</a>
@@ -35,42 +35,111 @@
           </li>
         </ul>
       </div>
-      
+
       <div id="content">
         <h2>News Archive</h2>
-        
+
+        <div class="entry">
+          <h3>Haystack 1.2.4 &amp; 2.0.0-alpha</h3>
+
+          <p class="meta">
+            Posted on 2011/06/23 by Daniel
+          </p>
+
+          <p>
+            Haystack has seen many releases since I last updated the site.
+            The 1.1.X series had several releases, Haystack 1.2 was released,
+            the 1.2.X series has had several releases &amp; I've started work on
+            2.0.0-alpha.
+          </p>
+
+          <p>
+            The Haystack 1.2.X release was mostly bugfixes but newly included
+            n-gram support &amp; Whoosh 1.8.X support. You can find more details
+            on the
+            <a href="http://groups.google.com/group/django-haystack/browse_thread/thread/f98dc953fd440b28">mailing list</a>.
+          </p>
+
+          <p>
+            Meanwhile, work on 2.0.0-alpha has hit master, including the
+            long-awaited addition of multiple index support. Similar to Django's
+            multidb support, this will allow you to talk to multiple search
+            engines at the same time. Things like master-slave setups, a
+            separate engine for autocomplete or split public-facing/admin-only
+            search are now trivial. When 2.0 lands, it'll be
+            backward-incompatible, as I'm also cleaning up other aspects of the
+            API.
+          </p>
+        </div>
+
+        <div class="entry">
+          <h3>Sprinting to 1.1-final</h3>
+
+          <p class="meta">
+            Posted on 2010/11/16 by Daniel
+          </p>
+
+          <p>
+            Though this site has sat out of date, there has been a lot of work
+            put into Haystack 1.1. As of writing, there are eight issues blocking
+            the release. I aim to have those down to zero by the end of the
+            week.
+          </p>
+
+          <p>
+            Once those eight are done, I will be releasing 1.1-final. The RC
+            process really didn't do much last time and this release has been
+            a long time in coming. This release will feature:
+          </p>
+
+          <ul>
+            <li>Vastly improved faceting</li>
+            <li>Whoosh 1.X support!</li>
+            <li>Document &amp; field boost support</li>
+            <li>Some admin integration</li>
+            <li>As well as several more features and a large number of bug fixes</li>
+          </ul>
+
+          <p>
+            Looking forward, the goal for future releases is to have much
+            shorter cycle (one release every couple months) and have fewer
+            major features land between them. 1.1 tried to be too much and the
+            timeline suffered as a result.
+          </p>
+        </div>
+
         <div class="entry">
           <h3>Haystack 1.0-final!</h3>
-          
+
           <p class="meta">
             Posted on 2009/11/30 by Daniel
           </p>
-          
+
           <p>
             Haystack 1.0 has finally been released! It is available on
             <a href="http://pypi.python.org/pypi/django-haystack">PyPi</a> and
             <a href="http://github.com/toastdriven/django-haystack/downloads">GitHub</a>
             for downloading. You can also now install it via
             <code>pip install django-haystack</code>. You can read the
-            announcement 
+            announcement
             <a href="http://toastdriven.com/fresh/haystack-10-final-released/">here</a>.
           </p>
         </div>
-        
+
         <div class="entry">
           <h3>Sprinting to 1.0-final</h3>
-          
+
           <p class="meta">
             Posted on 2009/11/17 by Daniel
           </p>
-          
+
           <p>
             Haystack has made a lot of progress over the this year and there
             are very few blockers left before 1.0-final status. I am doing a
             series of mini sprints over the course of the next week in an effort
             to clear out all blockers.
           </p>
-          
+
           <p>
             If things go as planned, there should be no 1.0-final tickets
             remaining in the queue by the weekend. I'll then put together an
@@ -79,23 +148,23 @@
             and I'm anxious to put the finishing touches on.
           </p>
         </div>
-        
+
         <div class="intro">
           <h3>Whoosh Support</h3>
-          
+
           <p class="meta">
             Posted on 2009/04/02 by Daniel
           </p>
-          
+
           <p>
-            Haystack now features a new backend: 
+            Haystack now features a new backend:
             <a href="http://whoosh.ca/">Whoosh</a>! This is excellent news, as
             it's both a great way to get up and running with Haystack (as
             Whoosh is pure Python, easy to install and no extra servers are
             needed) as well as a proof-of-concept that Haystack can work (and
             work well) with other backends.
           </p>
-          
+
           <p>
             You'll need to patch Whoosh (patch included) in order for
             everything to work correctly. We're contributing the patch back to
@@ -103,14 +172,14 @@
             in shortly.
           </p>
         </div>
-        
+
         <div class="intro">
           <h3>Site Launch</h3>
-          
+
           <p class="meta">
             Posted on 2009/03/02 by Daniel
           </p>
-          
+
           <p>
             The new Haystack site has been launched. It will serve as the
             primary place to check the documentation as well as screencasts.
@@ -119,7 +188,7 @@
           </p>
         </div>
       </div>
-      
+
       <div id="footer">
         <p>
           Copyright &copy; 2009-2011 - <a href="http://toastdriven.com/">Daniel Lindsley</a><br>
@@ -127,7 +196,7 @@
         </p>
       </div>
     </div>
-    
+
     <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
