@@ -53,7 +53,7 @@ body { background: #303c0c; color:#effbcb; }
 #header { height:220px; min-width:900px; background: #b4e3ff url('../images/headerbg.png') repeat-x; margin-bottom:20px; border-bottom:4px solid #262511; }
 #header h1 { position:absolute; top:0; left:50%; margin-left:-530px; text-indent:-50000px; background: url('../images/logo.png') no-repeat scroll top left; width: 716px; height: 220px;}
 #header p {visibility:hidden;}
-#header ul { list-style:none; width:220px; font-weight:bold; font-size:16px; color:#5d8094; line-height:1.6; position:absolute; top:34px; left:50%; margin-left:210px;}
+#header ul { list-style:none; width:220px; font-weight:bold; font-size:16px; color:#5d8094; line-height:1.6; position:absolute; top:24px; left:50%; margin-left:210px;}
 #header li {font-weight:bold;}
 #page { width:900px; margin:0 auto; }
 
@@ -65,8 +65,8 @@ body { background: #303c0c; color:#effbcb; }
 #nav_bar li {float:left; border-left:1px solid #d0cb9b; padding:2px 5px;}
 #nav_bar li a { display:block; color:#3b2611; background:none; padding:2px 10px;font-size:20px;   height:32px;line-height:32px; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px;}
 #nav_bar .docs { width:203px; }
-#nav_bar .docs a { background: url('../images/docs.png') no-repeat 5px 50%; padding-left:46px;} 
-#nav_bar .download a { background: url('../images/download.png') no-repeat 5px 50%; padding-left:46px;} 
+#nav_bar .docs a { background: url('../images/docs.png') no-repeat 5px 50%; padding-left:46px;}
+#nav_bar .download a { background: url('../images/download.png') no-repeat 5px 50%; padding-left:46px;}
 #nav_bar ul li a:hover { background-color:#DAD4A5 !important;}
 
 a, a:link { background:#5c612b; color:#eef7ab; text-decoration:none; padding:1px 2px; border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; }
